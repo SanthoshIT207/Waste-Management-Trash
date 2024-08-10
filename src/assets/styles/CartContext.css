@@ -1,0 +1,42 @@
+/* src/assets/styles/CartContext.css */
+
+/* Styles for notification messages */
+.notification {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    z-index: 1000; /* Ensure it's on top of other elements */
+    transition: opacity 0.5s ease;
+}
+
+/* Styles for cart info */
+.cart-info {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    z-index: 1000; /* Ensure it's on top of other elements */
+    transition: opacity 0.5s ease;
+}
+
+/* Optional: Add animation for notification fade out */
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.notification.fade-out {
+    animation: fadeOut 3s forwards;
+}

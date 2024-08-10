@@ -1,0 +1,76 @@
+.success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f8ff;
+  text-align: center;
+  padding: 20px;
+}
+
+.success-message {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #28a745;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel-button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.carousel-button:hover {
+  background-color: #218838;
+}
+
+.continue-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.continue-button:hover {
+  background-color: #0056b3;
+}

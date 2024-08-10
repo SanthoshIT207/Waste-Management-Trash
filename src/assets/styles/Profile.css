@@ -1,0 +1,148 @@
+/* src/assets/css/Profile.css */
+
+:root {
+  --background: #f7f8f7;
+  --foreground: #191919;
+  --muted: #caf5ce;
+  --border: #cccccc;
+  --hover: #eeecec;
+  --primary: #ffffff;
+  --primary-foreground: #ffffff;
+  --radius: 8px;
+  --font-family: Arial, sans-serif;
+  background-color: rgb(234, 255, 208);
+}
+
+/* Apply font family to all elements */
+* {
+  font-family: var(--font-family);
+}
+
+/* Profile Container */
+.profile-container {
+  display: flex;
+  height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+  background-color: rgb(238, 251, 223);
+}
+
+/* Side Navigation */
+.profile-sidenav {
+  width: 250px;
+  background-color: var(--muted);
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(254, 254, 254);
+}
+
+.profile-sidenav h2 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.profile-sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-sidenav li {
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+}
+
+.profile-sidenav li span {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.profile-sidenav li:hover {
+  background-color: var(--hover);
+  transition: background-color 0.3s ease;
+}
+
+/* Profile Content */
+.profile-content {
+  flex: 1;
+  padding: 20px;
+  background-color: rgb(255, 245, 245);
+}
+
+/* Profile Details, Orders, Wishlist, Notifications */
+.profile-details,
+.profile-orders,
+.profile-wishlist,
+.profile-notifications {
+  background-color: var(--muted);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+}
+
+/* Profile Picture Styles */
+.profile-picture-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid var(--border);
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-picture-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--muted);
+  color: var(--foreground);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+}
+
+/* Address Card */
+.address-card {
+  background-color: var(--background);
+  padding: 15px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.add-address-button {
+  background-color: #000000; /* Black color */
+  color: #ffffff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.add-address-button:hover {
+  background-color: #333333; /* Darker shade of black for hover effect */
+}
